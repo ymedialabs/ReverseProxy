@@ -17,10 +17,6 @@ This Server prints request body & response body of every request. Used http.Dump
 Go Version 1.6
 if not installed you can follow this documentation https://golang.org/doc/install
 
-```
-Give examples
-```
-
 ## Deployment
 You can run the program with the "port" and "url" sent as command line arguments. If not set by default Reverse Proxy will be running on port 9090 and it will be redirecting the request to http://localhost:8080.
 
@@ -29,9 +25,15 @@ Make sure you run your program at 8080 port or specify port while running the pr
 Run Commands:
 
 If you want to host ReverseProxy on 9090 and redirect the request to the port 5000 , run following command
+
+```
 ./ReverseProxy -port=9090 -url=http://localhost:5000
+```
 or
+
+```
 ./ReverseProxy
+```
 
 Note: If you modify anything in the code please do build the code once so that new binary file will be generated and you run the modified binary go file to get expected results.
 
