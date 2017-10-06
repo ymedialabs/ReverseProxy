@@ -43,7 +43,9 @@ When you run the ReverseProxy server, It will print the port where Reverse Proxy
 
 Following screenshot shows the things that are captured after making one of the login POST request through reverse proxy.
 
-![picture](images/request-analysis)
+![picture](images/request-analysis.png)
 
+
+Whenever there is a http request , we are printing request body and response body along with headers.Along with that we are measuring the time for each api. Currently we are storing the total response time, total no of api calls for a particular path.
 
 Thanks!
